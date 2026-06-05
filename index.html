@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manas Vyas | Creative Developer & Interactive Designer Portfolio</title>
+  <meta name="description" content="Immersive, cinematic portfolio of Manas Vyas, specializing in creative development, interactive design, and building premium digital experiences.">
+  
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/sections.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading portfolio experience">
+    <div class="preloader-ring"></div>
+    <div class="preloader-text">Loading Experience</div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 0;">
+      <a href="#" class="nav-logo magnetic" data-magnetic-strength="0.2" id="nav-logo">MV.DEV</a>
+      <nav class="nav" id="navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link nav-item magnetic" data-magnetic-strength="0.15">About</a></li>
+          <li><a href="#skills" class="nav-link nav-item magnetic" data-magnetic-strength="0.15">Skills</a></li>
+          <li><a href="#projects" class="nav-link nav-item magnetic" data-magnetic-strength="0.15">Projects</a></li>
+          <li><a href="#experience" class="nav-link nav-item magnetic" data-magnetic-strength="0.15">Timeline</a></li>
+          <li><a href="#testimonials" class="nav-link nav-item magnetic" data-magnetic-strength="0.15">Reviews</a></li>
+          <li><a href="#contact" class="nav-cta nav-item magnetic" data-magnetic-strength="0.2">Connect</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle-btn" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas-wrap">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    </div>
+    
+    <!-- Background Blobs -->
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+    
+    <div class="hero-content">
+      <p class="hero-greeting">Designing Digital Universes</p>
+      <h1 class="hero-name">Hi, I'm <span class="highlight">Manas Vyas</span></h1>
+      <p class="hero-tagline">I engineer high-performance, immersive, and visually stunning web interfaces that blur the line between technology and art.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic" data-magnetic-strength="0.25">View Projects</a>
+        <a href="#contact" class="btn btn-outline magnetic" data-magnetic-strength="0.25">Get In Touch</a>
+      </div>
+    </div>
+    
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-orb about-orb-1" aria-hidden="true"></div>
+    <div class="about-orb about-orb-2" aria-hidden="true"></div>
+    
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-wrap reveal-left">
+          <div class="section-label">01 / Profile</div>
+          <h2 class="section-title">A brief story of my <span class="gradient-text">creative journey</span>.</h2>
+          <div class="about-description">
+            <p>I am a developer who believes web pages shouldn't just be static documents. They should be interfaces that feel alive. My approach combines clean, performant engineering with advanced motion design and cinematic aesthetics.</p>
+            <br>
+            <p>Whether it's building low-latency frontend applications, developing interactive 3D canvas systems, or crafting modular user interfaces, I focus on delivering <strong>visual excellence and optimized performance</strong>.</p>
+          </div>
+          
+          <!-- Animated Stats -->
+          <div class="about-stats stagger-reveal">
+            <div class="stat-item">
+              <div class="stat-number" data-count="5" data-count-suffix="+">0</div>
+              <div class="stat-label">Years of Dev</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="30" data-count-suffix="+">0</div>
+              <div class="stat-label">Clients Served</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="99" data-count-suffix="%">0</div>
+              <div class="stat-label">Success Rate</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Avatar Photo Frame -->
+        <div class="about-image-wrap reveal-right">
+          <div class="about-photo-ring">
+            <div class="about-photo" style="background: linear-gradient(135deg, hsl(260, 40%, 15%), hsl(280, 55%, 20%)); display: flex; align-items: center; justify-content: center; overflow: hidden; width: 100%; height: 100%; border-radius: 50%;">
+              <!-- Beautiful inline SVG avatar representing an energetic creative developer -->
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: 80%; filter: drop-shadow(0 0 20px var(--accent-cyan-glow));">
+                <!-- Background decorative elements -->
+                <circle cx="50" cy="50" r="45" stroke="url(#gradient-ring)" stroke-width="1.5" stroke-dasharray="6 3" />
+                <path d="M15 50 C 30 25, 70 25, 85 50" stroke="var(--accent-purple)" stroke-width="1" stroke-dasharray="2 2" />
+                
+                <!-- Stylized abstract head/hair -->
+                <circle cx="50" cy="40" r="18" fill="url(#gradient-skin)" />
+                <path d="M32 40 C 32 20, 68 20, 68 40 C 65 42, 60 30, 50 32 C 40 30, 35 42, 32 40 Z" fill="var(--bg-primary)" opacity="0.9"/>
+                
+                <!-- Cool glowing glasses -->
+                <rect x="37" y="38" width="10" height="6" rx="2" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5" />
+                <rect x="53" y="38" width="10" height="6" rx="2" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5" />
+                <line x1="47" y1="41" x2="53" y2="41" stroke="var(--accent-cyan)" stroke-width="1.5" />
+                <!-- Glasses neon flare -->
+                <circle cx="42" cy="41" r="1" fill="white" />
+                <circle cx="58" cy="41" r="1" fill="white" />
+
+                <!-- Developer hoodie / body -->
+                <path d="M26 80 C 26 62, 35 56, 50 56 C 65 56, 74 62, 74 80 Z" fill="url(#gradient-hoodie)" />
+                <path d="M50 56 L 44 68 L 50 72 L 56 68 Z" fill="var(--accent-purple)" opacity="0.3" />
+                
+                <!-- Floating code/accent stars -->
+                <polygon points="22,25 24,29 28,29 25,32 26,36 22,34 18,36 19,32 16,29 20,29" fill="var(--accent-cyan)" opacity="0.6"/>
+                <polygon points="78,25 80,29 84,29 81,32 82,36 78,34 74,36 75,32 72,29 76,29" fill="var(--accent-purple)" opacity="0.6"/>
+                
+                <defs>
+                  <linearGradient id="gradient-ring" x1="0" y1="0" x2="100" y2="100">
+                    <stop offset="0%" stop-color="var(--accent-cyan)" />
+                    <stop offset="100%" stop-color="var(--accent-purple)" />
+                  </linearGradient>
+                  <linearGradient id="gradient-skin" x1="0" y1="0" x2="100" y2="100">
+                    <stop offset="0%" stop-color="#FFD1A9" />
+                    <stop offset="100%" stop-color="#E29F68" />
+                  </linearGradient>
+                  <linearGradient id="gradient-hoodie" x1="26" y1="56" x2="74" y2="80">
+                    <stop offset="0%" stop-color="var(--bg-tertiary)" />
+                    <stop offset="100%" stop-color="#3b1b6d" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: var(--space-xs);">02 / Capabilities</div>
+        <h2 class="section-title">My Tech Stack & <span class="gradient-text-warm">Arsenal</span></h2>
+      </div>
+      
+      <div class="skills-categories">
+        
+        <!-- Frontend Skills -->
+        <div class="skill-category reveal-left">
+          <h3 class="skill-category-title">
+            <span class="cat-icon" aria-hidden="true">🎨</span> Frontend Engineering
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="95%">
+              <span class="skill-icon">⚛️</span>
+              <div class="skill-name">React.js</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="90%">
+              <span class="skill-icon">⚡</span>
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="92%">
+              <span class="skill-icon">🌊</span>
+              <div class="skill-name">CSS / SVG</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="85%">
+              <span class="skill-icon">☄️</span>
+              <div class="skill-name">Canvas API</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Backend & Infrastructure -->
+        <div class="skill-category reveal-right">
+          <h3 class="skill-category-title">
+            <span class="cat-icon" aria-hidden="true">⚙️</span> Back-End & Tools
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="88%">
+              <span class="skill-icon">🟢</span>
+              <div class="skill-name">Node.js</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="80%">
+              <span class="skill-icon">🔥</span>
+              <div class="skill-name">Firebase</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="82%">
+              <span class="skill-icon">🛠️</span>
+              <div class="skill-name">Git / CI</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+            <div class="skill-card magnetic" data-magnetic-strength="0.1" data-proficiency="85%">
+              <span class="skill-icon">📦</span>
+              <div class="skill-name">Webpack / Vite</div>
+              <div class="skill-progress"><div class="skill-progress-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: var(--space-xs);">03 / Selected Works</div>
+        <h2 class="section-title">Projects that push <span class="gradient-text">boundaries</span></h2>
+      </div>
+      
+      <div class="projects-grid stagger-reveal">
+        
+        <!-- Project 1 -->
+        <article class="project-card reveal" tabindex="0">
+          <div class="project-image-wrap">
+            <!-- Sleek SVG project graphic pattern representing AI Visualization -->
+            <div class="project-image" style="background: linear-gradient(135deg, hsl(260, 50%, 8%), hsl(290, 60%, 12%)); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 12px var(--accent-cyan-glow));">
+                <circle cx="50" cy="50" r="30" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="8 4" />
+                <circle cx="50" cy="50" r="10" fill="var(--accent-cyan)" />
+                <path d="M50 10 L 50 90 M 10 50 L 90 50" stroke="var(--accent-purple)" stroke-width="1" opacity="0.5" />
+                <polygon points="50,20 60,35 40,35" fill="var(--accent-purple)" />
+                <polygon points="50,80 60,65 40,65" fill="var(--accent-purple)" />
+                <circle cx="20" cy="50" r="4" fill="var(--accent-cyan)" />
+                <circle cx="80" cy="50" r="4" fill="var(--accent-cyan)" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="project-overlay-link primary magnetic" data-magnetic-strength="0.2">Demo</a>
+                <a href="#" class="project-overlay-link secondary magnetic" data-magnetic-strength="0.2">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">AetherData AI</h3>
+            <p class="project-description">Real-time data orchestration platform featuring WebGL accelerated charts and predictive AI modeling visualization.</p>
+            <div class="project-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Three.js</span>
+              <span class="tech-badge">Node.js</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" tabindex="0">
+          <div class="project-image-wrap">
+            <!-- Sleek SVG project graphic pattern representing Blockchain -->
+            <div class="project-image" style="background: linear-gradient(135deg, hsl(240, 50%, 8%), hsl(190, 60%, 10%)); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 12px var(--accent-purple-glow));">
+                <rect x="35" y="35" width="30" height="30" rx="4" stroke="var(--accent-purple)" stroke-width="2" />
+                <rect x="25" y="25" width="30" height="30" rx="4" stroke="var(--accent-cyan)" stroke-width="1.5" opacity="0.7" />
+                <rect x="45" y="45" width="30" height="30" rx="4" stroke="var(--accent-pink)" stroke-width="1.5" opacity="0.7" />
+                <line x1="25" y1="25" x2="75" y2="75" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="4 4" opacity="0.3" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="project-overlay-link primary magnetic" data-magnetic-strength="0.2">Demo</a>
+                <a href="#" class="project-overlay-link secondary magnetic" data-magnetic-strength="0.2">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Helios Block Explorer</h3>
+            <p class="project-description">A modular blockchain indexer and node performance tracker showcasing custom WebSockets sync engines.</p>
+            <div class="project-tech">
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">WebSockets</span>
+              <span class="tech-badge">Rust</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" tabindex="0">
+          <div class="project-image-wrap">
+            <!-- Sleek SVG project graphic pattern representing Creative Agency -->
+            <div class="project-image" style="background: linear-gradient(135deg, hsl(320, 50%, 6%), hsl(270, 60%, 10%)); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 12px var(--accent-pink-glow));">
+                <path d="M30 70 L 50 30 L 70 70 Z" stroke="var(--accent-pink)" stroke-width="2" stroke-linejoin="round" />
+                <circle cx="50" cy="30" r="6" fill="var(--accent-cyan)" />
+                <circle cx="30" cy="70" r="6" fill="var(--accent-purple)" />
+                <circle cx="70" cy="70" r="6" fill="var(--accent-pink)" />
+                <line x1="50" y1="30" x2="50" y2="70" stroke="var(--accent-cyan)" stroke-width="1" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="project-overlay-link primary magnetic" data-magnetic-strength="0.2">Demo</a>
+                <a href="#" class="project-overlay-link secondary magnetic" data-magnetic-strength="0.2">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">CyberSpace Studio</h3>
+            <p class="project-description">Premium interactive agency portal showcasing view transitions API, CSS container queries, and audio cues.</p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">GSAP</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="experience-header reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: var(--space-xs);">04 / Career Evolution</div>
+        <h2 class="section-title">The milestones of my <span class="gradient-text-warm">journey</span></h2>
+      </div>
+      
+      <div class="timeline">
+        
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2024 - Present</div>
+            <h3 class="timeline-role">Lead Interactive Engineer</h3>
+            <div class="timeline-company">Aether Lab Systems</div>
+            <p class="timeline-description">Architecting modular component libraries, coordinating state structures, and reducing page load times by implementing advanced rendering strategies.</p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2022 - 2024</div>
+            <h3 class="timeline-role">Creative Frontend Engineer</h3>
+            <div class="timeline-company">Nebula Digital Media</div>
+            <p class="timeline-description">Developed high-performance React products, designed interactive canvas models, and optimized Core Web Vitals to elevate conversion scores.</p>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2021 - 2022</div>
+            <h3 class="timeline-role">Frontend Specialist</h3>
+            <div class="timeline-company">Freelance / Consulting</div>
+            <p class="timeline-description">Collaborated with tech startups globally, deploying client dashboards, interactive animations, and responsive site platforms.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: var(--space-xs);">05 / Words of Trust</div>
+        <h2 class="section-title">What my collaborators <span class="gradient-text">say</span></h2>
+      </div>
+      
+      <div class="testimonials-slider reveal-scale">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-slide active">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">Manas possesses a rare gift: the ability to execute brilliant technical logic while preserving a pristine vision for product design. The interface he built for us is a work of art.</p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Seraphina Vance</span>
+              <span class="testimonial-role">Chief Product Officer, Aether Labs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">Our app's performance jumped dramatically under Manas's watch. His optimization insights and mastery of scroll metrics completely elevated our user experience.</p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Devon Croft</span>
+              <span class="testimonial-role">Engineering Lead, Nebula Media</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">An absolute professional. Manas delivered a flawless frontend portal ahead of schedule, with pixel-perfect responsive execution and beautiful micro-animations.</p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Elena Rostova</span>
+              <span class="testimonial-role">Founder, Rostova Ventures</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="testimonial-dots">
+          <span class="testimonial-dot active" aria-label="Go to slide 1" role="button"></span>
+          <span class="testimonial-dot" aria-label="Go to slide 2" role="button"></span>
+          <span class="testimonial-dot" aria-label="Go to slide 3" role="button"></span>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header reveal">
+        <div class="section-label" style="justify-content: center; margin-bottom: var(--space-xs);">06 / Connection Portal</div>
+        <h2 class="section-title">Let's build something <span class="gradient-text-warm">extraordinary</span></h2>
+      </div>
+      
+      <div class="contact-grid">
+        
+        <!-- Details Column -->
+        <div class="contact-info reveal-left">
+          <p class="contact-info-text">Have an ambitious project in mind, or simply want to chat about creative frontend technologies? Connect through the portal or find me across these directories.</p>
+          
+          <div class="contact-methods">
+            <a href="mailto:manas@vyas.dev" class="contact-method magnetic" data-magnetic-strength="0.15">
+              <div class="contact-method-icon" aria-hidden="true">✉️</div>
+              <span>manas@vyas.dev</span>
+            </a>
+            <div class="contact-method">
+              <div class="contact-method-icon" aria-hidden="true">📍</div>
+              <span>Bengaluru, India</span>
+            </div>
+          </div>
+          
+          <!-- Social Icons -->
+          <div class="social-links stagger-reveal">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link magnetic" data-magnetic-strength="0.2" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link magnetic" data-magnetic-strength="0.2" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link magnetic" data-magnetic-strength="0.2" aria-label="Twitter Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Form Column -->
+        <div class="reveal-right">
+          <form class="contact-form" action="#" method="POST" aria-label="Send message to Manas">
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Your Name" required aria-required="true" aria-label="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Your Email Address" required aria-required="true" aria-label="Email Address">
+            </div>
+            <div class="form-group">
+              <textarea class="form-textarea" placeholder="Your Message" required aria-required="true" aria-label="Message Text"></textarea>
+            </div>
+            <button type="submit" class="submit-btn magnetic" data-magnetic-strength="0.15">Send Message</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2026 Manas Vyas. Crafted with <span class="heart" aria-label="love">❤️</span> and creative code.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to Top" title="Back to Top">▲</button>
+
+  <!-- Module Entry Script -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
